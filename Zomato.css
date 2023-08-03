@@ -1,0 +1,115 @@
+/* Zomato.css */
+.app {
+  text-align: center;
+  margin: 10px;
+}
+
+.zomato-app {
+  width: 100%;
+  margin: auto;
+}
+
+header {
+  background-color:orange;
+  padding: 20px;
+  color: white;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.restaurant-list {
+  width: 35%;
+}
+
+.restaurant-details {
+  width: 45%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  
+}
+
+li {
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #282c34;
+  padding: 10px;
+  color: white;
+}
+
+#carticon {
+  animation: spin 2s infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+
+
+.purchase-button {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.purchase-button:hover {
+  background-color:blue;
+}
+
+.add-to-cart-msg {
+  position: fixed;
+  top: 70px;
+  right: 20px;
+  background-color:orange;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  animation: fadeOut 2s;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
