@@ -81,7 +81,11 @@ const ZomatoApp = () => {
       setCartItems([...cartItems, { ...subItem, quantity: 1 }]);
       alert('Item added to cart!');
     }
+    setShowAddToCartMsg(true);
+  setTimeout(() => setShowAddToCartMsg(false), 2000);
   };
+  
+
   
   const handleRemoveFromCart = (subItem) => {
     const existingItem = cartItems.find((item) => item.name === subItem.name);
@@ -125,7 +129,7 @@ const ZomatoApp = () => {
   return (
     <div className="zomato-app">
       <header>
-        <h1>Welcome To VSV Foods</h1>
+        <h1><u>Welcome To VSV Foods</u></h1>
 
          <marquee scrollamount="25%" direction="right"><img src="https://e7.pngegg.com/pngimages/101/848/png-clipart-pizza-delivery-fast-food-restaurant-pizza-delivery-pizza-food-logo-thumbnail.png" alt="Zomato" /> </marquee>
       </header>
